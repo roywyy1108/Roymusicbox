@@ -1,0 +1,139 @@
+/* 375的屏幕 */
+@media screen and (min-width: 375px) {
+  html,
+  body {
+    font-size: 10px !important;
+  }
+}
+/* 414 */
+@media screen and (min-width: 414px) {
+  html,
+  body {
+    /* 10*414/375 */
+    font-size: 11.04px !important;
+  }
+}
+/* 768的屏幕 */
+@media screen and (min-width: 768) {
+  html,
+  body {
+    /* 10*768/375 */
+    font-size: 20.48px !important;
+  }
+}
+@font-face {
+  font-family: 'wyfont';
+  src: url('../font/文鼎PL简中楷.ttf');
+}
+body {
+  background-color: #2eaa64;
+  font-family: 'wyfont';
+}
+.imgall {
+  width: 100%;
+  height: 100%;
+}
+.jumbgc {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -85px;
+}
+.jumbgc .wyname {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.jumbgc .wyname .headtitle {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.jumbgc .wyname .spanline {
+  display: inline-block;
+  width: 35%;
+  border-top: 1px solid #ccc;
+}
+.jumbgc .songger {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.jumbgc .songger .songger-title {
+  color: #2eaa64;
+  margin: 0 auto;
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+}
+.jumbgc .headimg {
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  margin-top: 50px;
+}
+.numtop {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.numtop p {
+  height: 1rem;
+}
+.numtop .toplist {
+  padding: 1rem;
+  overflow: hidden;
+  padding-bottom: 20px;
+  color: #223e36;
+}
+.numtop .toplist h4 {
+  font-weight: 900;
+  color: #ccc;
+}
+.numtop .toplist .icon-bangdan3 {
+  font-size: 22px;
+  color: #fce97e;
+}
+.numtop .toplist ul {
+  margin-top: 35px;
+}
+.numtop .toplist ul li:nth-child(2n+1) {
+  background-color: #f8f8f8;
+}
+.numtop .toplist ul li {
+  font-weight: 700;
+  padding: 8px 0;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.numtop .toplist ul li .song {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.numtop .toplist ul li .likes {
+  line-height: 22px;
+  color: green;
+  margin-right: 10px;
+  text-align: center;
+}
+.numtop .toplist ul li .likes .icon-xihuan {
+  color: red;
+  margin-left: 5px;
+  font-weight: 200;
+}
+.footer {
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #579572;
+}

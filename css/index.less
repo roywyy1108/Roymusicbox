@@ -1,0 +1,156 @@
+/* 375的屏幕 */
+
+@media screen and (min-width:375px) {
+    html,
+    body {
+        font-size: 10px !important;
+    }
+}
+
+
+/* 414 */
+
+@media screen and (min-width:414px) {
+    html,
+    body {
+        /* 10*414/375 */
+        font-size: 11.04px !important;
+    }
+}
+
+
+/* 768的屏幕 */
+
+@media screen and (min-width:768) {
+    html,
+    body {
+        /* 10*768/375 */
+        font-size: 20.48px !important;
+    }
+}
+
+// 使用字体
+@font-face{
+    font-family: 'wyfont';
+    src:url('../font/文鼎PL简中楷.ttf')
+}
+
+
+body{
+    background-color:#2eaa64;
+    font-family: 'wyfont';
+}
+
+.imgall{
+    width: 100%;
+    height: 100%;
+}
+
+.jumbgc{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -85px;
+    .wyname{
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+        .headtitle{
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .spanline{
+            display: inline-block;
+            width: 35%;
+            border-top: 1px solid #ccc;
+        }
+    }
+    .songger{
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        .songger-title{
+            color: #2eaa64;
+            margin: 0 auto;
+            color: white;
+            font-size: 22px;
+            border-radius: 20px;
+        }
+    }
+    
+    .headimg{
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 5px solid #fff;
+        margin-top: 50px;
+    }
+}
+
+.numtop{
+    margin-top: 350px;
+    display:flex;
+    flex-direction: column;
+    p{
+        height: 1rem;
+    }
+    .toplist{
+        h4{
+            font-weight: 900;
+            color: #ccc;
+        }
+        .icon-bangdan3{
+            font-size: 22px;
+            color: rgb(252, 233, 126);
+        }
+        padding: 1rem;
+        overflow: hidden;
+        padding-bottom: 20px;
+        color: #223e36;
+        ul{
+            margin-top: 35px;
+            li:nth-child(2n+1){
+                background-color: #f8f8f8;
+            }
+            li{
+                font-weight: 700;
+                padding: 8px 0;
+                background-color: #ccc;
+                display: flex;
+                justify-content: space-between;
+                .song{
+                    margin-left: 10px;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                .likes{
+                    line-height: 22px;
+                    color: green;
+                    margin-right: 10px;
+                    text-align: center;
+                    .icon-xihuan{
+                        color: red;
+                        margin-left: 5px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #579572;
+}
+
